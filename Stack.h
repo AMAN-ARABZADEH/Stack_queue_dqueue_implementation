@@ -3,11 +3,9 @@
 #include <deque>
 
 namespace stc{
-    template <typename T>
+    template <typename T, typename Container = std::deque<T>>
     class Stack{
     public:
-        //typedef typename Container::value_type value_type;
-        //typedef typename Container::size_type size_type;
 
 
         bool empty(){
@@ -29,7 +27,7 @@ namespace stc{
             coll.pop_back();
         }
     private:
-        std::deque<T> coll;
+        Container coll;
     };
     template <typename T>
     bool operator==(const stc::Stack<T> &x, const stc::Stack<T> &y){

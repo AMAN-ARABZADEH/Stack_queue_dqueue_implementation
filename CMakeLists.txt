@@ -3,4 +3,4 @@ project(Stack_usingdeque)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Stack_usingdeque main.cpp queue.h)
+add_executable(Stack_usingdeque main.cpp queue.h Stack.h)

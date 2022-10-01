@@ -8,11 +8,12 @@
 
 
 namespace qtu{
-    template <typename  T>
+    template <typename  T, typename Container = std::deque<T>>
     class Queue{
     private:
-        std::queue<T> container;
+    Container container;
     public:
+
         bool empty(){
             return container.empty();
         }
